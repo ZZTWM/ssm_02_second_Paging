@@ -22,7 +22,7 @@ public class CategoryController {
 	public ModelAndView listCategory(Page page){
 		ModelAndView mav = new ModelAndView();
 		List<Category> cs = categoryService.list(page);
-		
+		  
 		int total = categoryService.total();
 		page.caculateLast(total);
 		
